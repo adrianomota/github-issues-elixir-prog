@@ -2,10 +2,12 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+#import_config "#{Mix.env}.exs"
+
 config :issues,
        github_url: "https://api.github.com"
 
-config :logger
+config :logger,
        compile_time_purge_level: :info
 
 # This configuration is loaded before any dependency and is restricted
